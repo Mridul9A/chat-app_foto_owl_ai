@@ -1,0 +1,177 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh; 
+    background-color: #181818; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+
+  .AppLayout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #121212; /
+  }
+  
+  .LeftPanel {
+    width: 30%;
+    background-color: #1c1c1c;
+    border-right: 1px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%; 
+  }
+  
+  .ContactList h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .ContactList ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ContactList li {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    color: #ffffff;
+  }
+  
+  .ContactList li:hover {
+    background-color: #333;
+  }
+  
+  .ContactList li:active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .RightPanel {
+    width: 70%;
+    background-color: #121212; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    overflow: hidden;
+  }
+  
+  .ChatWindow h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .Messages {
+    flex: 1; 
+    max-height: calc(100% - 120px); 
+    overflow-y: auto;
+    margin-bottom: 20px;
+    color: #ffffff;
+    height: 75vh;
+  }
+  
+  .Message {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #ffffff; 
+  }
+  
+  .Message strong {
+    color: #007bff;
+  }
+  
+  .MessageInput {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; 
+  }
+  
+  .MessageInput input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 20px;
+    outline: none;
+    background-color: #333; 
+    color: #ffffff; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .MessageInput input:focus {
+    border-color: #25d366; 
+  }
+  
+  .MessageInput button {
+    padding: 12px 20px;
+    background-color: #25d366; 
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MessageInput button:hover {
+    background-color: #128c7e; 
+  }
+  
+  .MessageInput button:active {
+    background-color: #075e54;
+  }
+  
+  @media (max-width: 768px) {
+    .AppLayout {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .LeftPanel {
+      width: 100%;
+      border-right: none;
+      padding: 15px;
+    }
+  
+    .RightPanel {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ContactList h2 {
+      font-size: 1.2rem;
+    }
+  
+    .ContactList li {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .ChatWindow h3 {
+      font-size: 1.5rem;
+    }
+  
+    .MessageInput input,
+    .MessageInput button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
