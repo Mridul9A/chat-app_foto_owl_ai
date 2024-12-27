@@ -3,6 +3,11 @@ echo "# WhatsApp Web Clone
 ## Overview
 This project is a WhatsApp web clone built using React.js and other modern web technologies. It aims to replicate the core features of WhatsApp, such as messaging, real-time updates, and user authentication.
 
+## Demo
+```
+https://chat-app-foto-owl-ai.vercel.app/
+```
+
 ## Features
 - Real-time messaging
 - User authentication
